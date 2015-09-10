@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html data-ember-extension="1">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta charset="utf-8">
+    <title>Network speed</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Toël Hartmann 2015">
+
+    <link rel="stylesheet" type="text/css" href="css/reset.css">
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+
+    <script src="javascript/jquery-1.11.2.js"></script>
+    <!--script src="javascript/jquery.bpopup.js"></script-->
+    <!--script src="javascript/jquery.barrating.js"></script-->
+    <!--script src="javascript/chart.js"></script-->
+    <script src="javascript/main.js"></script>
+
+  </head>
+  <body>
+
+    <div id='divwait' class='divwait'></div>
+    <div id="popup" style='display: none;'><div class="btnPopupClose">x</div>
+      <div id='popupContent'></div>
+    </div>
+
+    <div class="box center middle shadow">
+
+            <div class="title">Network tester</div>
+
+            <!--main class="main-base" role="main"-->
+            <div class="form">
+
+                <fieldset id="fieldset">
+                    <!--legend>Transport</legend-->
+                    <div id="main_content">
+                      <div class='table center'>
+                        <div class='row'>
+                          <label class='col1' for="lblLatency">Latency:</label>
+                          <label id='lblLatency' class='col2'>Computing...</label>
+                          <label id='lblLatencyQuality' class='col3'></label>
+                        </div>
+                        <div class='row'>
+                          <label class='col1' for="lblDownloadSpeed">Download speed:</label>
+                          <label id='lblDownloadSpeed' class='col2'>Computing...</label>
+                          <label id='lblDownloadQuality' class='col3'></label>
+                        </div>
+                        <!--div class='row'>
+                          <label class='col1' for="lblUploadSpeed">Upload speed:</label>
+                          <label id='lblUploadSpeed' class='col2'>Computing...</label>
+                          <label id='lblUploadQuality' class='col3'></label>
+                        </div-->
+                      </div>
+                      <!--div id='charts' class='center'>
+                        <canvas id="chartLatency" width="800" height="100"></canvas>
+                        <canvas id="chartDownload" width="800" height="100"></canvas>
+                        <canvas id="chartUpload" width="800" height="100"></canvas>
+                      </div-->
+                      <div id='status' class='center'>Working...</div>
+                    </div>
+                </fieldset>
+
+                <div class="version">20150909 Ver 0.0.1</div>
+
+            </div>
+          <!--/main-->
+        </div>
+  </body>
+  </html>
